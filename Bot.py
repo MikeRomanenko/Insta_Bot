@@ -8,6 +8,7 @@ password = "Enter your account password"
 users_list = []
 following_users = []
 follower_users = []
+
 class InstaBot:
     def __init__(self):
         self.api = InstagramAPI(user, password)
@@ -84,9 +85,10 @@ class InstaBot:
             print(f"count = {count}")
 
 bot =  InstaBot()
-name4 = "instagram"
-# To follow users run the function below
+name = "instagram"
 # change the name ('instagram') to your target username
+
+# To follow users run the function below
 bot.get_likes_list(name)
 
 # uncomment to unfollow users
